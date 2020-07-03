@@ -1,0 +1,361 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74HC273 U2
+U 1 1 5EFF694B
+P 5400 4550
+F 0 "U2" H 5400 4600 50  0000 C CNN
+F 1 "74HC273" H 5600 5200 50  0000 C CNN
+F 2 "" H 5400 4550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 5400 4550 50  0001 C CNN
+	1    5400 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U1
+U 1 1 5EFF7EBC
+P 4850 1800
+F 0 "U1" H 4850 1800 50  0000 C CNN
+F 1 "74HC00" H 4850 2000 50  0000 C CNN
+F 2 "" H 4850 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 4850 1800 50  0001 C CNN
+	1    4850 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1700 4550 1700
+Wire Wire Line
+	4400 1900 4500 1900
+Wire Wire Line
+	5150 1800 5250 1800
+Wire Wire Line
+	5250 1800 5250 2050
+Wire Wire Line
+	5250 2050 5350 2050
+$Comp
+L 74xx:74HC00 U1
+U 2 1 5EFFA5AA
+P 5650 2150
+F 0 "U1" H 5650 2150 50  0000 C CNN
+F 1 "74HC00" H 5650 2350 50  0000 C CNN
+F 2 "" H 5650 2150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 5650 2150 50  0001 C CNN
+	2    5650 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2250 4500 2250
+Wire Wire Line
+	4500 2250 4500 1900
+Connection ~ 4500 1900
+Wire Wire Line
+	4500 1900 4550 1900
+Wire Wire Line
+	5250 1800 6250 1800
+Connection ~ 5250 1800
+Wire Wire Line
+	5950 2150 6250 2150
+Wire Wire Line
+	4200 4950 4900 4950
+Wire Wire Line
+	4900 4050 4600 4050
+Wire Wire Line
+	4900 4150 4600 4150
+Wire Wire Line
+	4900 4250 4600 4250
+Wire Wire Line
+	4900 4350 4600 4350
+Wire Wire Line
+	4900 4450 4600 4450
+Wire Wire Line
+	4900 4550 4600 4550
+Wire Wire Line
+	4900 4650 4600 4650
+Wire Wire Line
+	4900 4750 4600 4750
+Text Label 4600 4050 0    50   ~ 0
+D0
+Text Label 4600 4150 0    50   ~ 0
+D1
+Text Label 4600 4250 0    50   ~ 0
+D2
+Text Label 4600 4350 0    50   ~ 0
+D3
+Text Label 4600 4450 0    50   ~ 0
+D4
+Text Label 4600 4550 0    50   ~ 0
+D5
+Text Label 4600 4650 0    50   ~ 0
+D6
+Text Label 4600 4750 0    50   ~ 0
+D7
+Entry Wire Line
+	4500 3950 4600 4050
+Entry Wire Line
+	4500 4050 4600 4150
+Entry Wire Line
+	4500 4150 4600 4250
+Entry Wire Line
+	4500 4250 4600 4350
+Entry Wire Line
+	4500 4350 4600 4450
+Entry Wire Line
+	4500 4450 4600 4550
+Entry Wire Line
+	4500 4550 4600 4650
+Entry Wire Line
+	4500 4650 4600 4750
+Wire Bus Line
+	4500 3800 4450 3800
+$Comp
+L 74xx:74HC00 U1
+U 4 1 5F007252
+P 5650 3050
+F 0 "U1" H 5650 3050 50  0000 C CNN
+F 1 "74HC00" H 5650 3250 50  0000 C CNN
+F 2 "" H 5650 3050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 5650 3050 50  0001 C CNN
+	4    5650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U1
+U 3 1 5F009FD7
+P 4850 2950
+F 0 "U1" H 4850 2950 50  0000 C CNN
+F 1 "74HC00" H 4850 3150 50  0000 C CNN
+F 2 "" H 4850 2950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 4850 2950 50  0001 C CNN
+	3    4850 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2850 4500 2850
+Wire Wire Line
+	4500 3050 4550 3050
+Wire Wire Line
+	4500 2850 4500 3050
+Wire Wire Line
+	5350 3150 4400 3150
+Wire Wire Line
+	5150 2950 5350 2950
+Wire Wire Line
+	4900 5050 4850 5050
+Wire Wire Line
+	4850 5050 4850 5300
+Wire Wire Line
+	4850 5300 4650 5300
+Wire Wire Line
+	4650 5300 4650 5250
+Wire Wire Line
+	5400 5350 5400 5400
+Wire Wire Line
+	5400 3750 5400 3700
+$Comp
+L power:GND #PWR04
+U 1 1 5F027AA6
+P 5400 5400
+F 0 "#PWR04" H 5400 5150 50  0001 C CNN
+F 1 "GND" H 5405 5227 50  0000 C CNN
+F 2 "" H 5400 5400 50  0001 C CNN
+F 3 "" H 5400 5400 50  0001 C CNN
+	1    5400 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5F027F98
+P 5400 3700
+F 0 "#PWR01" H 5400 3550 50  0001 C CNN
+F 1 "VCC" H 5415 3873 50  0000 C CNN
+F 2 "" H 5400 3700 50  0001 C CNN
+F 3 "" H 5400 3700 50  0001 C CNN
+	1    5400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 5F028B69
+P 4650 5250
+F 0 "#PWR03" H 4650 5100 50  0001 C CNN
+F 1 "VCC" H 4665 5423 50  0000 C CNN
+F 2 "" H 4650 5250 50  0001 C CNN
+F 3 "" H 4650 5250 50  0001 C CNN
+	1    4650 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Network08 RN1
+U 1 1 5F02AF69
+P 6900 4350
+F 0 "RN1" V 7425 4350 50  0000 C CNN
+F 1 "R_Network08" V 7334 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 7375 4350 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6900 4350 50  0001 C CNN
+	1    6900 4350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7100 4750 7200 4750
+Wire Wire Line
+	7200 4750 7200 4850
+$Comp
+L power:GND #PWR02
+U 1 1 5F02D685
+P 7200 4850
+F 0 "#PWR02" H 7200 4600 50  0001 C CNN
+F 1 "GND" H 7205 4677 50  0000 C CNN
+F 2 "" H 7200 4850 50  0001 C CNN
+F 3 "" H 7200 4850 50  0001 C CNN
+	1    7200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:HDSP-4850_2 BAR1
+U 1 1 5F02DB8E
+P 6300 4450
+F 0 "BAR1" H 6300 5117 50  0000 C CNN
+F 1 "HDSP-4850_2" H 6300 5026 50  0000 C CNN
+F 2 "Display:HDSP-4850" H 6300 3650 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 4300 4650 50  0001 C CNN
+	1    6300 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4050 6100 4050
+Wire Wire Line
+	5900 4150 6100 4150
+Wire Wire Line
+	5900 4250 6100 4250
+Wire Wire Line
+	5900 4350 6100 4350
+Wire Wire Line
+	5900 4450 6100 4450
+Wire Wire Line
+	5900 4550 6100 4550
+Wire Wire Line
+	5900 4650 6100 4650
+Wire Wire Line
+	5900 4750 6100 4750
+Wire Wire Line
+	6500 4050 6700 4050
+Wire Wire Line
+	6500 4150 6700 4150
+Wire Wire Line
+	6500 4250 6700 4250
+Wire Wire Line
+	6500 4350 6700 4350
+Wire Wire Line
+	6500 4450 6700 4450
+Wire Wire Line
+	6500 4550 6700 4550
+Wire Wire Line
+	6500 4650 6700 4650
+Wire Wire Line
+	6500 4750 6700 4750
+$Comp
+L 74xx:74HC00 U1
+U 5 1 5F04D958
+P 7050 2350
+F 0 "U1" H 7000 2350 50  0000 L CNN
+F 1 "74HC00" H 7050 2700 50  0000 L CNN
+F 2 "" H 7050 2350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 7050 2350 50  0001 C CNN
+	5    7050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR05
+U 1 1 5F051CE9
+P 7050 1800
+F 0 "#PWR05" H 7050 1650 50  0001 C CNN
+F 1 "VCC" H 7065 1973 50  0000 C CNN
+F 2 "" H 7050 1800 50  0001 C CNN
+F 3 "" H 7050 1800 50  0001 C CNN
+	1    7050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5F0520F6
+P 7050 2900
+F 0 "#PWR06" H 7050 2650 50  0001 C CNN
+F 1 "GND" H 7055 2727 50  0000 C CNN
+F 2 "" H 7050 2900 50  0001 C CNN
+F 3 "" H 7050 2900 50  0001 C CNN
+	1    7050 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2900 7050 2850
+Wire Wire Line
+	7050 1850 7050 1800
+Text Label 4200 4950 0    50   ~ 0
+~DEBUGWRITE
+Text Label 6500 3050 2    50   ~ 0
+~DEBUGWRITE
+Wire Wire Line
+	6500 3050 5950 3050
+Wire Wire Line
+	4400 2850 4500 2850
+Connection ~ 4500 2850
+Text GLabel 4400 1700 0    50   Input ~ 0
+R~W
+Text GLabel 4400 1900 0    50   Input ~ 0
+PHI2
+Text GLabel 4400 2850 0    50   Input ~ 0
+~WRITE
+Text GLabel 6250 2150 2    50   Output ~ 0
+~WRITE
+Text GLabel 6250 1800 2    50   Output ~ 0
+~READ
+Text GLabel 4400 3150 0    50   Input ~ 0
+A15
+Text GLabel 4450 3800 0    50   Input ~ 0
+D[0..7]
+Wire Notes Line
+	6600 1350 6600 2350
+Wire Notes Line
+	6600 2350 4050 2350
+Wire Notes Line
+	4050 2350 4050 1350
+Wire Notes Line
+	4050 2500 6600 2500
+Wire Notes Line
+	6600 2500 6600 3300
+Wire Notes Line
+	6600 3300 4050 3300
+Wire Notes Line
+	4050 3300 4050 2500
+Text Notes 4150 1500 0    50   ~ 0
+Read/Write/Clock combination
+Text Notes 4150 2650 0    50   ~ 0
+Debug port write signal
+Wire Notes Line
+	4050 1350 6600 1350
+Wire Notes Line
+	4050 3450 7350 3450
+Wire Notes Line
+	7350 3450 7350 5650
+Wire Notes Line
+	7350 5650 4050 5650
+Wire Notes Line
+	4050 5650 4050 3450
+Text Notes 4150 3600 0    50   ~ 0
+Debug port
+Wire Bus Line
+	4500 3800 4500 4650
+$EndSCHEMATC
